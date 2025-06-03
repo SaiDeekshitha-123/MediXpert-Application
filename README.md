@@ -1,38 +1,66 @@
-# MediXpert Application
+# 🧠 MediXpert Application
 
-MediXpert is a medical image analysis application that uses Convolutional Neural Networks (CNNs) to assist in the early detection of critical health conditions such as brain tumors, pneumonia, and bone fractures. This application is designed to help address issues like delayed diagnosis and limited access to medical specialists by automating and accelerating the diagnostic process.
-
----
-
-## 🚀 Features
-
-- 🧠 **Brain Tumor Detection**: Classifies MRI brain images to identify the presence of tumors.
-- 🫁 **Pneumonia Detection**: Analyzes chest X-ray images to detect pneumonia.
-- 🦴 **Bone Fracture Detection**: Identifies bone fractures in X-ray images.
-- 🛠️ **Image Preprocessing**: Includes resizing, normalization, and format conversion to prepare images for accurate model prediction.
+**MediXpert** is an AI-powered Flask web application designed to detect **brain tumors**, **pneumonia**, and **bone fractures** from medical images (MRI/X-rays) using Convolutional Neural Networks (CNNs). It aims to support medical professionals with rapid, reliable, and automated image-based diagnostics—especially in regions with limited access to radiological expertise.
 
 ---
 
-## 🧪 Tech Stack
+## 📌 Table of Contents
 
-- **Backend & Image Processing**: Python
-- **Deep Learning Models**: TensorFlow / Keras / PyTorch (based on CNN)
-- **Preprocessing Techniques**:
-  - Image resizing
-  - Pixel normalization
-  - Format conversion (e.g., JPG to PNG)
-
----
-
-## 💡 Problem Statement
-
-Access to timely and accurate diagnosis is a challenge in many regions due to a shortage of radiologists and medical infrastructure. MediXpert aims to bridge this gap by:
-
-- Automating detection from X-ray and MRI images
-- Reducing time required for initial diagnosis
-- Providing a tool for remote or preliminary screening
+- [About](#about)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example Code](#example-code)
+- [Modules](#modules)
+- [Results](#results)
+- [Future Work](#future-work)
 
 ---
 
-## 🗂️ Project Structure
+## 📖 About
 
+Manual diagnosis of medical images can be time-consuming, error-prone, and limited by the availability of skilled radiologists. MediXpert provides an end-to-end automated solution using AI to classify and detect three major conditions:
+
+- Brain Tumors (MRI)
+- Pneumonia (Chest X-ray)
+- Bone Fractures (X-ray)
+
+This platform integrates deep learning models with a simple web interface built in Flask.
+
+---
+
+## ✨ Features
+
+- 🔍 Deep learning-based image classification (CNNs)
+- 🧠 Brain Tumor, Pneumonia, and Fracture detection
+- 🖼️ Image upload and preprocessing
+- 📊 Prediction with confidence scores
+- 📄 Diagnostic report generation (PDF)
+- ⚡ Real-time inference
+- 🖥️ Clean and user-friendly UI
+
+---
+
+## 🏗️ Architecture
+
+1. User uploads image via web interface.
+2. Flask server processes the image.
+3. CNN model predicts condition.
+4. Result displayed with confidence.
+5. Report is optionally generated.
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/medixpert.git
+cd medixpert
+
+# Install required packages
+pip install -r requirements.txt
+
+# Run the application
+python app.py

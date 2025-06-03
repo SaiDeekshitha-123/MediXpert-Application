@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 # Run the application
 python app.py
-
+```
 
 ## 🚀 Usage
 
@@ -117,7 +117,7 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
+```
 ## 🧩 Modules
 
 ### 1. **Image Upload & Preprocessing**
